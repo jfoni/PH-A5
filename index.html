@@ -51,9 +51,28 @@
 
 <body>
 
-    <h1 class="text-center mt-20 text-2xl font-bold">
-        GitHub Issues Tracker
-    </h1>
+    <div id="loginPage" class="flex items-center justify-center min-h-screen p-4">
+
+        <div class="bg-white p-10 rounded-xl shadow-sm border w-full max-w-[440px]">
+
+            <h1 class="text-xl font-bold text-center mb-6">
+                GitHub Issues Tracker
+            </h1>
+
+            <form id="loginForm" class="space-y-4">
+
+                <input id="username" placeholder="Username" class="w-full border px-3 py-2 rounded">
+
+                <input id="password" type="password" placeholder="Password" class="w-full border px-3 py-2 rounded">
+
+                <button class="w-full bg-[#4f00ff] text-white py-2 rounded">
+                    Sign In
+                </button>
+
+            </form>
+
+        </div>
+    </div>
 
 </body>
 
