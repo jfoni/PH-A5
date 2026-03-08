@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,11 +17,43 @@
             font-family: 'Inter', sans-serif;
             background: #f8f9fa;
         }
+
+        .tab-active {
+            background: #4f00ff !important;
+            color: white !important;
+        }
+
+        .loader {
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #4f00ff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        #dashboard {
+            display: none;
+        }
     </style>
 
 </head>
 
 <body>
+
+    <h1 class="text-center mt-20 text-2xl font-bold">
+        GitHub Issues Tracker
+    </h1>
 
 </body>
 
